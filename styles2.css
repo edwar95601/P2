@@ -1,0 +1,243 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+
+
+/* Estilos para pantalla vertical (retrato) */
+@media screen and (orientation: portrait) {
+  body {
+    /* Estilos para pantalla vertical aquí */
+    transform: rotate(90deg);
+  }
+}
+
+/* Estilos para pantalla horizontal (paisaje) */
+@media screen and (orientation: landscape) {
+  body {
+    /* Estilos para pantalla horizontal aquí */
+    margin: 0;
+    font-size: 30px;
+    
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html body {
+  display: flex;
+  justify-content: center;
+  background-image: url("img1/paisaje3.jpg");
+  background-size: cover;
+  height: 100%;
+}
+
+
+.playbutton {
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: 80px 80px;
+  width: 80px;
+  height: 80px;
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+  outline: none; /* Elimina el contorno cuando el botón está enfocado */
+  /* Agrega otros estilos según tus preferencias */
+}
+
+.button-container {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Cambia a 4 columnas para dispositivos móviles */
+  grid-gap: 5px; /* Reduce el espacio entre botones */
+  margin-bottom: 5px; /* Reduce el espacio inferior */
+  width: 100%; /* Ancho del 100% para dispositivos móviles */
+  margin-right: 0; /* Sin margen derecho para dispositivos móviles */
+}
+.button-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tempo-button {
+  background: transparent;
+  background-repeat: no-repeat;
+  background-size: 90px 90px;
+  width: 90px;
+  height: 90px;
+  margin-left: 5px; /* Reduce el espacio a la izquierda del botón */
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+  outline: none; /* Elimina el contorno cuando el botón está enfocado */
+  /* Agrega otros estilos según tus preferencias */
+}
+.button-row {
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente los elementos */
+  align-items: center; /* Centrar verticalmente los elementos si es necesario */
+}
+.tempo{
+  /* Estilo común para los botones */
+  width: 50px; /* Ajusta el ancho según tus necesidades */
+  height: 50px; /* Ajusta la altura según tus necesidades */
+  font-size: 16px; /* Ajusta el tamaño de fuente para dispositivos móviles */
+  margin-left: 5px; /* Reduce el espacio a la izquierda del texto */
+  white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+  font-weight: bold; /* Hace que el texto esté en negrita */
+  /* Agrega otros estilos según tus preferencias */
+}
+.play-button {
+  background: transparent;
+  background-repeat: no-repeat;
+  width: 90px; /* Ajusta el ancho según tus necesidades */
+  height: 90px; /* Ajusta la altura según tus necesidades */
+  background-size: 80px 80px; /* Ajusta el tamaño de la imagen de fondo */
+  border: none; /* Elimina el borde */
+  cursor: pointer; /* Cambia el cursor para indicar que es interactivo */
+  outline: none; /* Elimina el contorno cuando el botón está enfocado */
+  /* Agrega otros estilos según tus preferencias */
+}
+
+.playbutton:focus {
+  outline: none; /* Asegura que no haya contorno cuando el botón está enfocado */
+}
+.play-button:focus {
+  outline: none; /* Asegura que no haya contorno cuando el botón está enfocado */
+}
+.tempo-button:focus {
+  outline: none; /* Asegura que no haya contorno cuando el botón está enfocado */
+}
+
+.btn-r {
+  background-image: url("img1/pica2.gif");
+}
+.btn-l {
+  background-image: url("img1/gigi.gif");
+}
+.btn-sleep {
+  background-image: url("img1/sleep.gif");
+}
+  /* botón rojo */
+.btn-1 {
+    background-image: url("img1/flor1.gif");
+    margin: left; /* Margen: arriba derecha abajo izquierda */
+}
+    
+.btn-2 {
+  background-image: url("img1/flor2.gif");
+} 
+
+.btn-3 {
+  background-image: url("img1/flor3.gif");
+} 
+
+.btn-4 {
+  background-image: url("img1/flor4.gif");
+} 
+
+.btn-5 {
+  background-image: url("img1/flor5.gif");
+} 
+
+.btn-6 {
+  background-image: url("img1/flor6.gif");
+} 
+
+.btn-7 {
+  background-image: url("img1/flor7.gif");
+} 
+
+.btn-8 {
+  background-image: url("img1/flor8.gif");
+} 
+
+.btn-9 {
+  background-image: url("img1/flor9.gif");
+} 
+
+.btn-10 {
+  background-image: url("img1/flor10.gif");
+} 
+
+.btn-11 {
+  background-image: url("img1/flor11.gif");
+} 
+
+.btn-12 {
+  background-image: url("img1/flor12.gif");
+} 
+
+.btn-13 {
+  background-image: url("img1/flor13.gif");
+} 
+
+.btn-14 {
+  background-image: url("img1/flor14.gif");
+} 
+
+.btn-15 {
+  background-image: url("img1/flor15.gif");
+} 
+
+.btn-16 {
+  background-image: url("img1/flor16.gif");
+} 
+
+.btn-17 {
+  background-image: url("img1/flor17.gif");
+} 
+
+.btn-18 {
+  background-image: url("img1/flor18.gif");
+} 
+
+.btn-19 {
+  background-image: url("img1/flor19.gif");
+} 
+
+.btn-20 {
+  background-image: url("img1/flor20.gif");
+} 
+
+.btn-21 {
+  background-image: url("img1/flor21.gif");
+} 
+
+.btn-22 {
+  background-image: url("img1/flor22.gif");
+} 
+
+.btn-23 {
+  background-image: url("img1/flor23.gif");
+} 
+
+.btn-24 {
+  background-image: url("img1/flor24.gif");
+} 
+
+.btn-25 {
+  background-image: url("img1/flor25.gif");
+} 
+
+.btn-26 {
+  background-image: url("img1/flor26.gif");
+} 
+
+.btn-27 {
+  background-image: url("img1/flor27.gif");
+} 
+
+.btn-28 {
+  background-image: url("img1/flor28.gif");
+} 
+
+/* Agrega más clases de colores según tus necesidades */
+/*.play-button.active {
+  transform: scale(1.1); /* Ejemplo de escala cuando se activa el botón */
+  /*box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Ejemplo de sombra cuando se activa el botón */
+  /*width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}*/ 

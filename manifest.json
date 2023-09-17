@@ -1,0 +1,17 @@
+{
+    "name": "APP DE ENSEÑANZA MUSICAL",
+    "short_name": "PIANO APP",
+    "theme_color": "#2196f3",
+    "background_color": "#2196f3",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "./",
+    "start_url":"./?utm_source=web_app_manifest",
+    "icons": [
+        {
+            "src": "./img1/flor2.gif",
+            "type": "image/png",
+            "sizes": "512x512"
+        }
+    ]
+}
