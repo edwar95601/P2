@@ -29,21 +29,20 @@
 
   <body onload="my_onload()" onkeydown="handle_key(event)">
     <div class="wrapper">
-    <header class="container mt-3 mb-5">
       <div class="text-center">
-        <div class="button-row">
+        
         <button id="stopButton" class="playbutton btn-sleep"></button>
         <button id="increaseTempoButton" class="tempo-button btn-r"></button>
         <button id="decreaseTempoButton" class="tempo-button btn-l"></button>
-        <span id="tempoDisplay" class="tempo"> Tempo: 120 BPM</span>
-        <button class="piano2">?</button>
-      </div> 
+        <button id="btn_piano" class="button-piano btn-p"></button>
+        <span id="tempoDisplay" class="tempo"> Tempo: 90 BPM</span>
+        
       </div>
     </header>
     
     <div class="button-container">
         <div class="button-column">
-          <button id="playButton1" class="play-button btn-1" onclick="toggleButtonColor(this)" data-key="a"></button>
+          <button id="playButton1" class="play-button btn-1" onclick="toggleButtonColor(this)"></button>
           <button id="playButton2" class="play-button btn-2" onclick="toggleButtonColor(this)"></button>
           <button id="playButton3" class="play-button btn-3" onclick="toggleButtonColor(this)"></button>
           <button id="playButton4" class="play-button btn-4" onclick="toggleButtonColor(this)"></button>
@@ -78,15 +77,6 @@
           <button id="playButton23" class="play-button btn-23" onclick="toggleButtonColor(this)"></button>
           <button id="playButton24" class="play-button btn-24" onclick="toggleButtonColor(this)"></button>
         </div>
-        <div class="button-column">
-          <button id="playButton25" class="play-button btn-25" onclick="toggleButtonColor(this)"></button>
-          <button id="playButton26" class="play-button btn-26" onclick="toggleButtonColor(this)"></button>
-          <button id="playButton27" class="play-button btn-27" onclick="toggleButtonColor(this)"></button>
-          <button id="playButton28" class="play-button btn-28" onclick="toggleButtonColor(this)"></button>
-        </div>
-    </div>
-    <div class="">
-      <button id="salsaButton" class="play-button"></button>
     </div>
   </div>
 
