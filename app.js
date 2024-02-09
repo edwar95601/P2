@@ -17,335 +17,216 @@ window.addEventListener('DOMContentLoaded', adjustPianoSize);
 window.addEventListener('resize', adjustPianoSize);
     // Definir las escalas musicales con los nombres de los archivos de sonido
     const scale1 = {
-      C: 'D3.ogg',
-      D: 'E4.ogg',
-      E: 'A2.ogg',
-      F: 'E4.ogg',
-      G: 'A3.ogg',
-      A: 'C5.ogg',
-      B: 'F4.ogg'
+      C: 'C.mp3',
+      D: 'G.mp3',
+      E: 'F.mp3',
+      F: 'C.mp3'
     };
   
     const scale2 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
+      C: 'C3.mp3',
+      D: 'Am.mp3',
+      E: 'Dm.mp3',
+      F: 'F.mp3'
+
+      
     };
 
     const scale3 = {
-      C: 'C3.ogg',
-      D: 'D3.ogg',
-      E: 'E4.ogg',
-      F: 'F4.ogg',
-      G: 'G4.ogg',
-      A: 'Ab4.ogg',
-      B: 'Bb3.ogg'
+      C: 'C2.mp3',
+      D: '',
+      E: '',
+      F: ''
     };
 
     const scale4 = {
-      C: 'E3.ogg',
-      D: 'Gb4.ogg',
-      E: 'G3.ogg',
-      F: 'A2.ogg',
-      G: 'B2.ogg',
-      A: 'Db4.ogg',
-      B: 'Eb4.ogg'
+      C: 'C1.mp3',
+      D: '',
+      E: '',
+      F: ''
     };
 
     const scale5 = {
-      C: 'F3.ogg',
-      D: 'Gb3.ogg',
-      E: 'A3.ogg',
-      F: 'Bb2.ogg',
-      G: 'C5.ogg',
-      A: 'Db4.ogg',
-      B: 'F4.ogg'
+      C: 'Dm.mp3',
+      D: '',
+      E: 'G.mp3',
+      F: 'C.mp3'
     };
 
     const scale6 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'Dm.mp3',
+      D: 'Am.mp3',
+      E: 'C.mp3',
+      F: 'F.mp3',
     };
 
     const scale7 = {
-      C: 'G3.ogg',
-      D: 'Ab4.ogg',
-      E: 'Bb3.ogg',
-      F: 'C3.ogg',
-      G: 'Db3.ogg',
-      A: 'Eb3.ogg',
-      B: 'Gb3.ogg'
+      C: 'Ds2.ogg',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale8 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
+      C: 'Ds1.ogg',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale9 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'Em.mp3',
+      D: 'C.mp3',
+      E: 'F.mp3',
+      F: 'Am.mp3',
     };
 
     const scale10 = {
-      C: 'A2.ogg',
-      D: 'Bb3.ogg',
-      E: 'C3.ogg',
-      F: 'Db4.ogg',
-      G: 'Eb3.ogg',
-      A: 'F4.ogg',
-      B: 'Ab4.ogg'
+      C: 'Em.mp3',
+      D: 'F.mp3',
+      E: 'Dm.mp3',
+      F: 'G.mp3',
     };
 
     const scale11 = {
-      C: 'B3.ogg',
-      D: 'C5.ogg',
-      E: 'D4.ogg',
-      F: 'E3.ogg',
-      G: 'F4.ogg',
-      A: 'Gb4.ogg',
-      B: 'A3.ogg'
+      C: 'Ds2.ogg',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale12 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'Ds1.ogg',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale13 = {
-      C: 'A2.ogg',
-      D: 'B3.ogg',
-      E: 'C3.ogg',
-      F: 'D4.ogg',
-      G: 'E3.ogg',
-      A: 'F3.ogg',
-      B: 'B4.ogg'
+      C: 'F.mp3',
+      D: 'Am.mp3',
+      E: 'C.mp3',
+      F: 'Dm.mp3',
     };
 
     const scale14 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
+      C: 'F.mp3',
+      D: 'Em.mp3',
+      E: 'G.mp3',
+      F: 'Am.mp3',
     };
 
     const scale15 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'Fs2.ogg',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale16 = {
-      C: 'A2.ogg',
-      D: 'B3.ogg',
-      E: 'C3.ogg',
-      F: 'D4.ogg',
-      G: 'E3.ogg',
-      A: 'F3.ogg',
-      B: 'B4.ogg'
+      C: 'Fs1.ogg',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale17 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
+      C: 'G.mp3',
+      D: 'Em.mp3',
+      E: 'G.mp3',
+      F: 'F.mp3',
     };
 
     const scale18 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'G.mp3',
+      D: 'Am.mp3',
+      E: 'C.mp3',
+      F: 'Dm.mp3',
     };
 
     const scale19 = {
-      C: 'A2.ogg',
-      D: 'B3.ogg',
-      E: 'C3.ogg',
-      F: 'D4.ogg',
-      G: 'E3.ogg',
-      A: 'F3.ogg',
-      B: 'B4.ogg'
+      C: '.mp3',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale20 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
+      C: '',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale21 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'Am.mp3',
+      D: 'F.mp3',
+      E: 'Em.mp3',
+      F: 'Dm.mp3',
     };
 
     const scale22 = {
-      C: 'A2.ogg',
-      D: 'B3.ogg',
-      E: 'C3.ogg',
-      F: 'D4.ogg',
-      G: 'E3.ogg',
-      A: 'F3.ogg',
-      B: 'B4.ogg'
+      C: 'Am.mp3',
+      D: 'G.mp3',
+      E: 'C.mp3',
+      F: 'Em.mp3',
     };
 
     const scale23 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
+      C: 'A2.mp3',
+      D: '',
+      E: '',
+      F: '',
     };
 
     const scale24 = {
-      C: 'A4.ogg',
-      D: 'B5.ogg',
-      E: 'E4.ogg',
-      F: 'A5.ogg',
-      G: 'D3.ogg',
-      A: 'F3.ogg',
-      B: 'C5.ogg'
+      C: 'A1.mp3',
+      D: '',
+      E: '',
+      F: '',
     };
 
-    const scale25 = {
-      C: 'A2.ogg',
-      D: 'B3.ogg',
-      E: 'C3.ogg',
-      F: 'D4.ogg',
-      G: 'E3.ogg',
-      A: 'F3.ogg',
-      B: 'B4.ogg'
-    };
-
-    const scale26 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
-    };
-
-    const scale27 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
-    };
-
-    const scale28 = {
-      C: 'D3.ogg',
-      D: 'C4.ogg',
-      E: 'E4.ogg',
-      F: 'F3.ogg',
-      G: 'A2.ogg',
-      A: 'B2.ogg',
-      B: 'A3.ogg'
-    };
-
+   
 
     let intervalIds = []; // Array de IDs de intervalo para las melodías
-    let tempo = 120; // Tempo inicial (BPM)
+    let tempo = 90; // Tempo inicial (BPM)
 
     // Función para reproducir una nota de una melodía
     function playNote(note, scale) {
-      const audio = new Audio(`sounds/${scale[note]}`); // Ruta al archivo de sonido correspondiente a la nota
+      const audio = new Audio(`Acordes/${scale[note]}`); // Ruta al archivo de sonido correspondiente a la nota
       audio.play();
       audio.addEventListener('ended', () => {
         audio.currentTime = 0;
       });
     }
 
-    // Función para reproducir una melodía con el tempo actualizado
-    //function playMelody(scale) {
-      //const melody = ['C', 'D', 'E', 'F', 'G', 'A', 'B']; // Melodía en escala
-      //let beat = 0; // Contador de tiempo de beats
-      //const intervalId = setInterval(() => {
-        //playNote(melody[beat % melody.length], scale);
-        //beat++;
-      //}, 25000 / tempo); // Reducir el intervalo de tiempo para hacer que las melodías sean más rápidas
-      //intervalIds.push(intervalId); // Almacenar el ID del intervalo para detenerlo más tarde
-    //}
-    
-    function playSalsaMelody(scale) {
-      const melodyScale = ['C', 'D', 'E', 'F', 'G', 'A', 'B'];
-    
-      const rhythmPattern = [0, 1, 1, 2, 1, 0, 3]; // Un patrón rítmico de ejemplo
-    
-      let beat = 0;
-      const intervalId = setInterval(() => {
-       
-        const rhythmIndex = rhythmPattern[beat % rhythmPattern.length, scale];
-        
-        if (rhythmIndex !== 3) { // No reproducir sonido en el cuarto beat (silencio)
-          playNote(melodyScale[beat % melodyScale.length],scale);
-        }  
-        beat++;
-      }, 24000 / tempo); // Intervalo de tiempo más rápido para lograr un ritmo rápido
-      intervalIds.push(intervalId); // Almacenar el ID del intervalo para detenerlo más tarde
-    }
-    const salsaButton = document.getElementById('salsaButton');
-salsaButton.addEventListener('click', playSalsaMelody);
-    
+let currentMelodyInterval; // Variable para almacenar el ID del intervalo actual
+let isTouching = false; // Variable para verificar si se está tocando la pantalla
 
-    // Función para detener todas las melodías
-    function stopMelodies() {
-      intervalIds.forEach(intervalId => clearInterval(intervalId));
-      intervalIds = [];
+function playSalsaMelody(scale) {
+  const melodyScale = ['C', 'D', 'E', 'F'];
+
+  const rhythmPattern = [1, 0.75, 0.25, 1]; // Patrón rítmico para una balada
+
+  let beat = 0;
+  currentMelodyInterval = setInterval(() => {
+    if (isTouching) {
+      const rhythmIndex = rhythmPattern[beat % rhythmPattern.length];
+      if (rhythmIndex !== 3) { // No reproducir sonido en el cuarto beat (silencio)
+        playNote(melodyScale[beat % melodyScale.length], scale);
+      } else {
+        // Puedes agregar algún efecto adicional para el sonido del cuarto beat (silencio)
+        // Por ejemplo: playSilence();
+      }
+      beat++;
     }
+  }, 20000 / tempo); // Intervalo de tiempo ajustado para un ritmo más rápido
+}
+
+function stopMelodies() {
+  clearInterval(currentMelodyInterval); // Detener el intervalo de la melodía actual
+}
+    
 
 // Función para aumentar el tempo
 function increaseTempo() {
@@ -368,12 +249,28 @@ const playButtons = document.getElementsByClassName('play-button');
 
 // Agrega event listeners a los botones
 for (let i = 0; i < playButtons.length; i++) {
-  playButtons[i].addEventListener('click', function() {
+  playButtons[i].addEventListener('touchstart', function() {
     // Cambia la clase 'active' del botón al hacer clic
     this.classList.toggle('active');  
     // Agrega aquí tu código adicional para el evento del botón
+    toggleButtonColor(this);
   });
 }
+
+function toggleButtonImage(button) {
+  const defaultImage = button.getAttribute('data-image');
+  const activeImage = button.getAttribute('data-active-image');
+
+  // Verifica si el botón está activo
+  if (button.classList.contains('active')) {
+    button.style.backgroundImage = `url("${activeImage}")`;
+  } else {
+    button.style.backgroundImage = `url("${defaultImage}")`;
+  }
+}
+
+// Asigna imágenes específicas para cada botón
+document.querySelector('.btn-24').setAttribute('data-active-image', 'img1/img/flor.png');
 
 function toggleButtonColor(button) {
   if (button.classList.contains('btn-1')) {
@@ -424,194 +321,333 @@ function toggleButtonColor(button) {
     button.classList.toggle('btn-23-active');
   } else if (button.classList.contains('btn-24')) {
     button.classList.toggle('btn-24-active');
-  } else if (button.classList.contains('btn-25')) {
-    button.classList.toggle('btn-25-active');
-  } else if(button.classList.contains('btn-26')) {
-    button.classList.toggle('btn-26-active');
-  } else if (button.classList.contains('btn-27')) {
-    button.classList.toggle('btn-27-active');
-  } else if (button.classList.contains('btn-28')) {
-    button.classList.toggle('btn-28-active');
   }
 }
+
+
 
     // Función para actualizar la visualización del tempo
     function updateTempoDisplay() {
         const tempoDisplay = document.getElementById('tempoDisplay');
       tempoDisplay.textContent = `Tempo: ${tempo} BPM`;
     }
-
-    // Obtener los botones y agregar event listeners
+    
+   
     const playButton1 = document.getElementById('playButton1');
-    playButton1.addEventListener('click', () => {
+    
+    playButton1.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale1);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton1.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
     
 
     const playButton2 = document.getElementById('playButton2');
-    playButton2.addEventListener('click', () => {
+    
+    playButton2.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale2);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton2.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton3 = document.getElementById('playButton3');
-    playButton3.addEventListener('click', () => {
+    
+    playButton3.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale3);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton3.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton4 = document.getElementById('playButton4');
-    playButton4.addEventListener('click', () => {
+    
+    playButton4.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale4);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton4.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton5 = document.getElementById('playButton5');
-    playButton5.addEventListener('click', () => {
+    
+    playButton5.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale5);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton5.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton6 = document.getElementById('playButton6');
-    playButton6.addEventListener('click', () => {
+    
+    playButton6.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale6);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton6.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton7 = document.getElementById('playButton7');
-    playButton7.addEventListener('click', () => {
+    
+    playButton7.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale7);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton7.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton8 = document.getElementById('playButton8');
-    playButton8.addEventListener('click', () => {
+    
+    playButton8.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale8);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton8.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton9 = document.getElementById('playButton9');
-    playButton9.addEventListener('click', () => {
+    
+    playButton9.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale9);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton9.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton10 = document.getElementById('playButton10');
-    playButton10.addEventListener('click', () => {
+    
+    playButton10.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale10);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton10.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton11 = document.getElementById('playButton11');
-    playButton11.addEventListener('click', () => {
+    
+    playButton11.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale11);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton11.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton12 = document.getElementById('playButton12');
-    playButton12.addEventListener('click', () => {
+    
+    playButton12.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale12);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton12.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton13 = document.getElementById('playButton13');
-    playButton13.addEventListener('click', () => {
+    
+    playButton13.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale13);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton13.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton14 = document.getElementById('playButton14');
-    playButton14.addEventListener('click', () => {
+    
+    playButton14.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale14);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton14.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton15 = document.getElementById('playButton15');
-    playButton15.addEventListener('click', () => {
+    
+    playButton15.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale15);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
     });
+    
+    playButton15.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
+    });
+    
 
     const playButton16 = document.getElementById('playButton16');
-    playButton16.addEventListener('click', () => {
+    
+    playButton16.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale16);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton16.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton17 = document.getElementById('playButton17');
-    playButton17.addEventListener('click', () => {
+    
+    playButton17.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale17);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton17.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton18 = document.getElementById('playButton18');
-    playButton18.addEventListener('click', () => {
+    
+    playButton18.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale18);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton18.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton19 = document.getElementById('playButton19');
-    playButton19.addEventListener('click', () => {
+    
+    playButton19.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale19);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton19.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
-    const playButton20= document.getElementById('playButton20');
-    playButton20.addEventListener('click', () => {
+    const playButton20 = document.getElementById('playButton20');
+    
+    playButton20.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale20);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton20.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton21 = document.getElementById('playButton21');
-    playButton21.addEventListener('click', () => {
+    
+    playButton21.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale21);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton21.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton22 = document.getElementById('playButton22');
-    playButton22.addEventListener('click', () => {
+    
+    playButton22.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale22);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton22.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton23 = document.getElementById('playButton23');
-    playButton23.addEventListener('click', () => {
+    
+    playButton23.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
       playSalsaMelody(scale23);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
+    });
+    
+    playButton23.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
     });
 
     const playButton24 = document.getElementById('playButton24');
-    playButton24.addEventListener('click', () => {
-      playSalsaMelody(scale24);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
-    });
-
-    const playButton25 = document.getElementById('playButton25');
-    playButton25.addEventListener('click', () => {
-      playSalsaMelody(scale25);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
-    });
-
-    const playButton26 = document.getElementById('playButton26');
-    playButton26.addEventListener('click', () => {
-      playSalsaMelody(scale26);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
-    });
-
-    const playButton27 = document.getElementById('playButton27');
-    playButton27.addEventListener('click', () => {
-      playSalsaMelody(scale27);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
-    });
-
-    const playButton28 = document.getElementById('playButton28');
-    playButton28.addEventListener('click', () => {
-      playSalsaMelody(scale28);
-      setTimeout(stopMelodies, 80000 / tempo * 7); // Detener después de una vuelta completa de la melodía
-    });
-
     
+    playButton24.addEventListener('touchstart', (event) => {
+      event.preventDefault(); // Prevenir el comportamiento predeterminado (p. ej., zoom)
+      isTouching = true;
+      playSalsaMelody(scale24);
+    });
+    
+    playButton24.addEventListener('touchend', () => {
+      isTouching = false;
+      stopMelodies(); // Detener la melodía cuando se levanta el dedo
+    });
+
+
 
     const stopButton = document.getElementById('stopButton');
     stopButton.addEventListener('click', stopMelodies);
